@@ -8,7 +8,8 @@ class urlData:
         self.name = ""
         self.content = dict()
         self.outgoingLinks = []
-        self.incomingLinks = set()
+        self.incomingLinks = []
+        self.numWords = 0
         self.pagerank = -1
         self.tf = -1
         self.idf = -1
@@ -57,6 +58,10 @@ def crawl(seed):
                     words[word] = 1
                 else:
                     words[word] = words[word] + 1
+
+            # records number of words in document for later use
+            currUrlData.numWords = currUrlData.numWords + len(wordList)
+
         currUrlData.content = words
 
         # gets all links from the current URL and adds them to the queue
@@ -79,13 +84,11 @@ def crawl(seed):
 
             # code for incomign URLs
             if currUrl != url:
-                print(currUrl)
-                print(url)
                 if url in allUrlData:
                     incomingUrl = allUrlData[url]
                 else:
                     incomingUrl = urlData()
-                incomingUrl.incomingLinks.add(currUrl)
+                incomingUrl.incomingLinks.append(currUrl)
                 allUrlData[url] = incomingUrl
             urlUsed.add(url)
 
