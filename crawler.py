@@ -4,14 +4,15 @@ import os
 
 # class that stores all necessary information for a url
 class urlData:
-    name = ""
-    content = dict()
-    outgoingLinks = []
-    incomingLinks = set()
-    pagerank = -1
-    tf = -1
-    idf = -1
-    tfIdf = -1
+    def __init__(self):
+        self.name = ""
+        self.content = dict()
+        self.outgoingLinks = []
+        self.incomingLinks = set()
+        self.pagerank = -1
+        self.tf = -1
+        self.idf = -1
+        self.tfIdf = -1
 
 
 urlQueue = []
@@ -22,13 +23,13 @@ allUrlData = dict()
 def crawl(seed):
     # TODO delete all stuff before the crawl
 
-    #adds seed as first URL
+    # adds seed as first URL
     urlQueue.append(seed)
     urlUsed.add(seed)
 
     while len(urlQueue) > 0:
         currUrl = urlQueue[0]
-        urlQueue.pop()
+        urlQueue.pop(0)
 
         contents = webdev.read_url(currUrl)
 
@@ -72,21 +73,23 @@ def crawl(seed):
                 i += 1
             if url[0] == ".":
                 url = blankUrl + url[1:]
-            
+
             if url not in urlUsed:
                 urlQueue.append(url)
-            urlUsed.add(url)
-            
+
+            # code for incomign URLs
             if currUrl != url:
+                print(currUrl)
+                print(url)
                 if url in allUrlData:
                     incomingUrl = allUrlData[url]
                 else:
                     incomingUrl = urlData()
                 incomingUrl.incomingLinks.add(currUrl)
                 allUrlData[url] = incomingUrl
+            urlUsed.add(url)
 
-
-            # this is for outgoing and incoming URLs
+            # this is for outgoing URLs
             outgoingLinks.append(url)
 
         currUrlData.outgoingLinks = outgoingLinks
