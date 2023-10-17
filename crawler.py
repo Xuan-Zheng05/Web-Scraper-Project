@@ -99,8 +99,16 @@ def crawl(seed):
         currUrlData.outgoingLinks = outgoingLinks
         allUrlData[currUrl] = currUrlData
 
-    # calculating term frequencies for each word in each url
-    for url in urlUsed:
+    # after crawling through all documents, calculate the tf, idf, and tfidf
+    calculateTf()
+    calculateIdf()
+    calculateTfidf()
+
+    return len(urlUsed)
+
+# function that calculates the term frequency for each word in each document
+def calculateTf():
+     for url in urlUsed:
         currUrl = allUrlData[url]
         content = currUrl.content
         for word in content:
@@ -114,20 +122,19 @@ def crawl(seed):
 
         allUrlData[url] = currUrl
 
-    # calculating the idf for each word
+# function that calculates the idf for each word
+def calculateIdf():
     for word in inverseDF:
         inverseDF[word] = math.log(len(urlUsed) / (1 + inverseDF[word]), 2)
 
-    # finally calculating the tfidf for each word in a document
+# function that calculates the tfidf for each word in a document
+def calculateTfidf():
     for url in urlUsed:
         currUrl = allUrlData[url]
         for word in currUrl.tf:
             currUrl.tfidf[word] = math.log(1 + currUrl.tf[word], 2) * inverseDF[word]
 
         allUrlData[url] = currUrl
-
-    return len(urlUsed)
-
 
 crawl("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html")
 print()
