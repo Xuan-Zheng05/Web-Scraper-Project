@@ -1,4 +1,5 @@
 import webdev
+import math
 import os
 
 
@@ -11,11 +12,11 @@ class urlData:
         self.incomingLinks = []
         self.numWords = 0
         self.pagerank = -1
-        self.tf = -1
-        self.idf = -1
-        self.tfIdf = -1
+        self.tf = dict()
+        self.tfidf = dict()
 
 
+inverseDF = dict()
 urlQueue = []
 urlUsed = set()
 allUrlData = dict()
@@ -97,6 +98,29 @@ def crawl(seed):
 
         currUrlData.outgoingLinks = outgoingLinks
         allUrlData[currUrl] = currUrlData
+
+    # calculating term frequencies for each word in each url
+    for url in urlUsed:
+        currUrl = allUrlData[url]
+        content = currUrl.content
+        for word in content:
+            currUrl.tf[word] = content[word] / currUrl.numWords
+
+            # calculating how many documents a word appears in
+            if word not in inverseDF:
+                inverseDF[word] = 1
+            else:
+                inverseDF[word] = inverseDF[word] + 1
+        allUrlData[url] = currUrl
+
+    # calculating the idf for each word
+    for word in inverseDF:
+        inverseDF[word] = math.log(len(urlUsed) / (1 + inverseDF[word]), 2)
+
+    # finally calculating the tfidf for each word in a document
+    for url in urlUsed:
+        currUrl = allUrlData[url]
+
     return len(urlUsed)
 
 
