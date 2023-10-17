@@ -23,7 +23,7 @@ allUrlData = dict()
 
 
 def crawl(seed):
-    # TODO delete all stuff before the crawl
+    # TODO delete all stuff in previous crawl
 
     # adds seed as first URL
     urlQueue.append(seed)
@@ -111,6 +111,7 @@ def crawl(seed):
                 inverseDF[word] = 1
             else:
                 inverseDF[word] = inverseDF[word] + 1
+
         allUrlData[url] = currUrl
 
     # calculating the idf for each word
@@ -120,6 +121,10 @@ def crawl(seed):
     # finally calculating the tfidf for each word in a document
     for url in urlUsed:
         currUrl = allUrlData[url]
+        for word in currUrl.tf:
+            currUrl.tfidf[word] = math.log(1 + currUrl.tf[word], 2) * inverseDF[word]
+
+        allUrlData[url] = currUrl
 
     return len(urlUsed)
 
