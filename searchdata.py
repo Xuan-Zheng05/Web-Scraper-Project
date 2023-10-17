@@ -7,15 +7,15 @@ def get_incoming_links(URL):
 
 
 def get_page_rank(URL):
-    return None
+    return -1
 
 
 def get_idf(URL):
-    return None
+    return 0
 
 
 def get_tf(URL, word):
-    return None
+    return 0
 
 
 def get_tf_idf(URL, word):
