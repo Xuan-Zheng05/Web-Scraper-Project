@@ -1,34 +1,37 @@
 import webdev
+import math
 import os
 
 
 # class that stores all necessary information for a url
 class urlData:
-    name = ""
-    content = dict()
-    outgoingLinks = []
-    incomingLinks = set()
-    pagerank = -1
-    tf = -1
-    idf = -1
-    tfIdf = -1
+    def __init__(self):
+        self.name = ""
+        self.content = dict()
+        self.outgoingLinks = []
+        self.incomingLinks = []
+        self.numWords = 0
+        self.pagerank = -1
+        self.tf = dict()
+        self.tfidf = dict()
 
 
+inverseDF = dict()
 urlQueue = []
 urlUsed = set()
 allUrlData = dict()
 
 
 def crawl(seed):
-    # TODO delete all stuff before the crawl
+    # TODO delete all stuff in previous crawl
 
-    #adds seed as first URL
+    # adds seed as first URL
     urlQueue.append(seed)
     urlUsed.add(seed)
 
     while len(urlQueue) > 0:
         currUrl = urlQueue[0]
-        urlQueue.pop()
+        urlQueue.pop(0)
 
         contents = webdev.read_url(currUrl)
 
@@ -56,6 +59,10 @@ def crawl(seed):
                     words[word] = 1
                 else:
                     words[word] = words[word] + 1
+
+            # records number of words in document for later use
+            currUrlData.numWords = currUrlData.numWords + len(wordList)
+
         currUrlData.content = words
 
         # gets all links from the current URL and adds them to the queue
@@ -72,25 +79,53 @@ def crawl(seed):
                 i += 1
             if url[0] == ".":
                 url = blankUrl + url[1:]
-            
+
             if url not in urlUsed:
                 urlQueue.append(url)
-            urlUsed.add(url)
-            
+
+            # code for incomign URLs
             if currUrl != url:
                 if url in allUrlData:
                     incomingUrl = allUrlData[url]
                 else:
                     incomingUrl = urlData()
-                incomingUrl.incomingLinks.add(currUrl)
+                incomingUrl.incomingLinks.append(currUrl)
                 allUrlData[url] = incomingUrl
+            urlUsed.add(url)
 
-
-            # this is for outgoing and incoming URLs
+            # this is for outgoing URLs
             outgoingLinks.append(url)
 
         currUrlData.outgoingLinks = outgoingLinks
         allUrlData[currUrl] = currUrlData
+
+    # calculating term frequencies for each word in each url
+    for url in urlUsed:
+        currUrl = allUrlData[url]
+        content = currUrl.content
+        for word in content:
+            currUrl.tf[word] = content[word] / currUrl.numWords
+
+            # calculating how many documents a word appears in
+            if word not in inverseDF:
+                inverseDF[word] = 1
+            else:
+                inverseDF[word] = inverseDF[word] + 1
+
+        allUrlData[url] = currUrl
+
+    # calculating the idf for each word
+    for word in inverseDF:
+        inverseDF[word] = math.log(len(urlUsed) / (1 + inverseDF[word]), 2)
+
+    # finally calculating the tfidf for each word in a document
+    for url in urlUsed:
+        currUrl = allUrlData[url]
+        for word in currUrl.tf:
+            currUrl.tfidf[word] = math.log(1 + currUrl.tf[word], 2) * inverseDF[word]
+
+        allUrlData[url] = currUrl
+
     return len(urlUsed)
 
 
