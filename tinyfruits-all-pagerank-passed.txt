@@ -1,0 +1,6 @@
+Passed Test #32 checking page rank for URL http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+
+expected = -1
+result = -1
+
+

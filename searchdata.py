@@ -8,13 +8,13 @@ inverseDf = json.load(fhand)
 
 def get_outgoing_links(URL):
     if URL in urlData:
-        return urlData.outgoinglinks
+        return urlData[URL].get("outgoingLinks")
     return None
 
 
 def get_incoming_links(URL):
     if URL in urlData:
-        return urlData[URL].incominglinks
+        return urlData[URL].get("incomingLinks")
     return None
 
 
@@ -30,13 +30,13 @@ def get_idf(word):
 
 def get_tf(URL, word):
     if URL in urlData:
-        if word in urlData[URL].tf:
-            return urlData[URL].tf[word]
+        if word in urlData[URL]["tf"]:
+            return urlData[URL]["tf"][word]
     return 0
 
 
 def get_tf_idf(URL, word):
     if URL in urlData:
-        if word in urlData[URL].idf:
-            return urlData[URL].idf[word]
+        if word in urlData[URL]["tfidf"]:
+            return urlData[URL]["tfidf"][word]
     return None
