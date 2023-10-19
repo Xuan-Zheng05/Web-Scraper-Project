@@ -1,6 +1,13 @@
 import webdev
 import math
+import json
 import os
+
+
+# class that converts url data to json
+class UrlDataEncoder(json.JSONEncoder):
+    def default(self, o):
+        return o.__dict__
 
 
 # class that stores all necessary information for a url
@@ -104,11 +111,17 @@ def crawl(seed):
     calculateIdf()
     calculateTfidf()
 
+    urlJson = UrlDataEncoder().encode(allUrlData)
+    open("urlData.txt", "w").write(urlJson)
+    urlJson = UrlDataEncoder().encode(inverseDF)
+    open("inverseDf.txt", "w").write(urlJson)
+
     return len(urlUsed)
+
 
 # function that calculates the term frequency for each word in each document
 def calculateTf():
-     for url in urlUsed:
+    for url in urlUsed:
         currUrl = allUrlData[url]
         content = currUrl.content
         for word in content:
@@ -122,10 +135,12 @@ def calculateTf():
 
         allUrlData[url] = currUrl
 
+
 # function that calculates the idf for each word
 def calculateIdf():
     for word in inverseDF:
         inverseDF[word] = math.log(len(urlUsed) / (1 + inverseDF[word]), 2)
+
 
 # function that calculates the tfidf for each word in a document
 def calculateTfidf():
@@ -136,5 +151,6 @@ def calculateTfidf():
 
         allUrlData[url] = currUrl
 
-crawl("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html")
-print()
+
+# crawl("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html")
+# print()
