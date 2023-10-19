@@ -120,6 +120,7 @@ def crawl(seed):
 
 
 # function that calculates the term frequency for each word in each document
+# no output or input
 def calculateTf():
     for url in urlUsed:
         currUrl = allUrlData[url]
@@ -137,12 +138,14 @@ def calculateTf():
 
 
 # function that calculates the idf for each word
+# no output or input
 def calculateIdf():
     for word in inverseDF:
         inverseDF[word] = math.log(len(urlUsed) / (1 + inverseDF[word]), 2)
 
 
 # function that calculates the tfidf for each word in a document
+# no output or input
 def calculateTfidf():
     for url in urlUsed:
         currUrl = allUrlData[url]
