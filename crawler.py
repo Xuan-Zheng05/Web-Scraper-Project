@@ -190,6 +190,7 @@ def calculatePageRank():
         for j in range(len(matrix[0])):
             for k in range(len(matrix)):
                 result[i][j] += t0[i][k] * matrix[k][j]
+
     t0 = result
     dis = 1
     while dis > 0.0001:
