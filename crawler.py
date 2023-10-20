@@ -21,21 +21,26 @@ class urlData:
         self.pagerank = -1
         self.tf = dict()
         self.tfidf = dict()
+        self.pos = -1
 
 
 inverseDF = dict()
 urlQueue = []
 urlUsed = set()
 allUrlData = dict()
+urlList = []
 
 
 def crawl(seed):
-    # TODO delete all stuff in previous crawl
+    # deletes the data from previous crawl
+    open("urlData.txt", "w")
+    open("inverseDf.txt", "w")
 
     # adds seed as first URL
     urlQueue.append(seed)
     urlUsed.add(seed)
 
+    pos = 0
     while len(urlQueue) > 0:
         currUrl = urlQueue[0]
         urlQueue.pop(0)
@@ -48,6 +53,9 @@ def crawl(seed):
         else:
             currUrlData = urlData()
 
+        currUrlData.pos = pos
+        urlList.append(currUrl)
+        pos += 1
         # gets the name for the current URL
         titleIndex = contents.index("<title>")
         titleEnd = contents.index("</title>")
@@ -106,11 +114,13 @@ def crawl(seed):
         currUrlData.outgoingLinks = outgoingLinks
         allUrlData[currUrl] = currUrlData
 
-    # after crawling through all documents, calculate the tf, idf, and tfidf
+    # after crawling through all documents, calculate the tf, idf, tfidf, and PageRank
     calculateTf()
     calculateIdf()
     calculateTfidf()
+    matrix = calculatePageRank()
 
+    # stores the data of urlData and inverseDf into files
     urlJson = UrlDataEncoder().encode(allUrlData)
     open("urlData.txt", "w").write(urlJson)
     urlJson = UrlDataEncoder().encode(inverseDF)
@@ -155,5 +165,23 @@ def calculateTfidf():
         allUrlData[url] = currUrl
 
 
-# crawl("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html")
-# print()
+def calculatePageRank():
+    matrix = [[0 for _ in range(len(urlList))] for _ in range(len(urlList))]
+    for url in urlList:
+        currUrl = allUrlData[url]
+        for outgoing in currUrl.outgoingLinks:
+            outUrl = allUrlData[outgoing]
+            index = outUrl.pos
+
+            matrix[currUrl.pos][outUrl.pos] = 1
+        numOnes = len(currUrl.outgoingLinks)
+        for j in range(len(matrix[currUrl.pos])):
+            matrix[currUrl.pos][j] = float(matrix[currUrl.pos][j]) / numOnes
+            matrix[currUrl.pos][j] = matrix[currUrl.pos][j] * (1 - 0.1)
+            matrix[currUrl.pos][j] = matrix[currUrl.pos][j] + 0.1 / len(urlList)
+
+    return matrix
+
+
+crawl("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html")
+print()
