@@ -164,8 +164,11 @@ def calculateTfidf():
 
         allUrlData[url] = currUrl
 
-
+# function for calculating the PageRank
+# no output or input
 def calculatePageRank():
+
+    # generates the probability matrix
     matrix = [[0 for _ in range(len(urlList))] for _ in range(len(urlList))]
     for url in urlList:
         currUrl = allUrlData[url]
@@ -180,6 +183,26 @@ def calculatePageRank():
             matrix[currUrl.pos][j] = matrix[currUrl.pos][j] * (1 - 0.1)
             matrix[currUrl.pos][j] = matrix[currUrl.pos][j] + 0.1 / len(urlList)
 
+
+    t1 =  [[0.1 for _ in range(len(urlList))] for _ in range(1)]
+    t2 =  [[0 for _ in range(len(urlList))] for _ in range(1)]
+    for i in range(len(t1)): 
+        for j in range(len(matrix[0])): 
+            for k in range(len(matrix)): 
+                t2[i][j] += t1[i][k] * matrix[k][j]
+    
+    dis = 1
+    while dis > 0.0001:
+        
+        for i in range(len(t1)): 
+            for j in range(len(matrix[0])): 
+                for k in range(len(matrix)): 
+                    t1[i][j] += t2[i][k] * matrix[k][j]
+        
+        sum  = 0
+        for i in range(len(t1[0])):
+            sum += pow(t1[0][i] - t2[0][i], 2)
+        dis = math.sqrt(sum)        
     return matrix
 
 
