@@ -1,0 +1,36 @@
+Passed Test #153 checking IDF for word banana
+
+expected = 0.052894948432125555
+result = 0.052894948432125555
+
+
+Passed Test #154 checking IDF for word peach
+
+expected = 0.05139915250664415
+result = 0.05139915250664415
+
+
+Passed Test #155 checking IDF for word coconut
+
+expected = 0.05739166388833648
+result = 0.05739166388833648
+
+
+Passed Test #156 checking IDF for word apple
+
+expected = 0.05439229681862769
+result = 0.05439229681862769
+
+
+Passed Test #157 checking IDF for word pear
+
+expected = 0.052894948432125555
+result = 0.052894948432125555
+
+
+Passed Test #158 checking IDF for word tomato
+
+expected = 0
+result = 0
+
+

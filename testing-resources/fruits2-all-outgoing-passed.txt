@@ -1,0 +1,306 @@
+Passed Test #0 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-813.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-624.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-624.html']
+
+
+Passed Test #1 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-878.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-63.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-601.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-63.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-601.html']
+
+
+Passed Test #2 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-517.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-11.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-11.html']
+
+
+Passed Test #3 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-688.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-28.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-28.html']
+
+
+Passed Test #4 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-283.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-13.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-66.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-13.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-66.html']
+
+
+Passed Test #5 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-295.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-93.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-93.html']
+
+
+Passed Test #6 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-42.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-12.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-300.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-12.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-300.html']
+
+
+Passed Test #7 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-900.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-47.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-757.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-47.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-757.html']
+
+
+Passed Test #8 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-718.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-209.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-209.html']
+
+
+Passed Test #9 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-261.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-20.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-111.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-303.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-2.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-20.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-111.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-303.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-2.html']
+
+
+Passed Test #10 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-120.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-68.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-105.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-68.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-105.html']
+
+
+Passed Test #11 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-90.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-165.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-259.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-784.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-945.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-2.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-165.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-259.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-784.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-945.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-2.html']
+
+
+Passed Test #12 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-514.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-217.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-445.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-217.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-445.html']
+
+
+Passed Test #13 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-824.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-88.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-513.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-938.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-88.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-513.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-938.html']
+
+
+Passed Test #14 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-739.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-186.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-186.html']
+
+
+Passed Test #15 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-914.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-32.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-32.html']
+
+
+Passed Test #16 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-818.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-622.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-622.html']
+
+
+Passed Test #17 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-251.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-16.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-115.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-16.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-115.html']
+
+
+Passed Test #18 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-661.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-696.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-623.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-696.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-623.html']
+
+
+Passed Test #19 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-901.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-268.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-268.html']
+
+
+Passed Test #20 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-171.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-123.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-992.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-0.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-203.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-123.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-992.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-0.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-203.html']
+
+
+Passed Test #21 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-209.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-100.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-375.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-32.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-143.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-322.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-718.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-841.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-100.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-375.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-32.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-143.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-322.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-718.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-841.html']
+
+
+Passed Test #22 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-414.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-268.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-268.html']
+
+
+Passed Test #23 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-808.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-711.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-864.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-711.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-864.html']
+
+
+Passed Test #24 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-76.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-6.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-668.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-56.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-6.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-668.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-56.html']
+
+
+Passed Test #25 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-27.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-764.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-8.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-213.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-764.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-8.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-213.html']
+
+
+Passed Test #26 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-668.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-76.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-365.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-76.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-365.html']
+
+
+Passed Test #27 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-827.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-426.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-426.html']
+
+
+Passed Test #28 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-848.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-57.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-839.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-861.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-57.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-839.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-861.html']
+
+
+Passed Test #29 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-36.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-83.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-0.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-7.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-608.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-710.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-83.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-0.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-7.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-608.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-710.html']
+
+
+Passed Test #30 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-242.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-16.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-16.html']
+
+
+Passed Test #31 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-175.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-158.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-231.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-483.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-20.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-158.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-231.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-483.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-20.html']
+
+
+Passed Test #32 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-536.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-169.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-169.html']
+
+
+Passed Test #33 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-793.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-116.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-326.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-624.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-804.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-116.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-326.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-624.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-804.html']
+
+
+Passed Test #34 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-482.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-156.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-156.html']
+
+
+Passed Test #35 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-967.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-3.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-863.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-3.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-863.html']
+
+
+Passed Test #36 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-968.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-458.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-965.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-458.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-965.html']
+
+
+Passed Test #37 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-691.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-11.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-439.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-511.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-757.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-11.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-439.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-511.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-757.html']
+
+
+Passed Test #38 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-288.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-297.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-593.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-751.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-28.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-338.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-754.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-297.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-593.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-751.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-28.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-338.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-754.html']
+
+
+Passed Test #39 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-716.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-539.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-539.html']
+
+
+Passed Test #40 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-939.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-9.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-125.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-9.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-125.html']
+
+
+Passed Test #41 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-585.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-8.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-479.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-8.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-479.html']
+
+
+Passed Test #42 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-259.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-2.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-0.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-12.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-90.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-2.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-0.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-12.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-90.html']
+
+
+Passed Test #43 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-55.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-9.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-165.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-9.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-165.html']
+
+
+Passed Test #44 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-443.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-173.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-23.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-108.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-137.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-976.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-173.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-23.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-108.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-137.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-976.html']
+
+
+Passed Test #45 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-263.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-0.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-851.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-0.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-851.html']
+
+
+Passed Test #46 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-463.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-438.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-491.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-689.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-438.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-491.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-689.html']
+
+
+Passed Test #47 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-817.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-675.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-675.html']
+
+
+Passed Test #48 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-228.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-68.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-68.html']
+
+
+Passed Test #49 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/fruits2/N-990.html
+
+expected = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-458.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-632.html']
+result = ['http://people.scs.carleton.ca/~davidmckenney/fruits2/N-458.html', 'http://people.scs.carleton.ca/~davidmckenney/fruits2/N-632.html']
+
+
+Passed Test #50 checking outgoing links for URL http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+
+expected = None
+result = None
+
+
