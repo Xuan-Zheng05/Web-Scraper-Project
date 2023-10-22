@@ -215,5 +215,5 @@ def calculatePageRank():
     return matrix
 
 
-crawl("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html")
-print()
+# crawl("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html")
+# print()
