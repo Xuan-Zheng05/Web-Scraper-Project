@@ -1,7 +1,6 @@
 import webdev
 import math
 import json
-import os
 
 
 # class that converts url data to json
@@ -34,8 +33,8 @@ pageRankResult = []
 
 def crawl(seed):
     # deletes the data from previous crawl
-    # open("urlData.txt", "w")
-    # open("inverseDf.txt", "w")
+    open("urlData.txt", "w")
+    open("inverseDf.txt", "w")
 
     # adds seed as first URL
     urlQueue.append(seed)

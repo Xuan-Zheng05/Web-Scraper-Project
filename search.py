@@ -28,8 +28,6 @@ def search(phrase, boost):
     fhand = open("urlData.txt")
     urlData = json.load(fhand)
 
-    if phrase == "tomato banana blueberry blueberry":
-        print()
     words = phrase.split()
     wordLen = len(words)
     query = dict()
@@ -44,8 +42,6 @@ def search(phrase, boost):
     topTen = []
     n = 10
     for url in urlData:
-        if url == "http://people.scs.carleton.ca/~davidmckenney/fruits/N-610.html":
-            print()
         if cosineDenom(urlData[url]) > 0:
             a = cosineNum(urlData[url])
             b = cosineDenom(urlData[url])
