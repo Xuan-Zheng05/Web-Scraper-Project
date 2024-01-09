@@ -112,3 +112,6 @@ def cosineDenom(url):
 
     denominator = math.sqrt(query) * math.sqrt(doc)
     return denominator
+
+
+search("coconut coconut orange blueberry lime lime lime tomato", True)

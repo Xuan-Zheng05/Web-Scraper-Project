@@ -213,3 +213,6 @@ def calculatePageRank():
         currUrl.pagerank = pageRankResult[currUrl.pos]
         allUrlData[url] = currUrl
     return matrix
+
+
+crawl("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html")
